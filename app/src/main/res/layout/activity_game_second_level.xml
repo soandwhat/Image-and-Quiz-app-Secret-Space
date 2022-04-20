@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_game"
+    tools:context=".GameSecondLevel">
+
+    <GridView
+        android:id="@+id/GView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:numColumns="4"
+        android:stretchMode="columnWidth">
+
+    </GridView>
+
+    <RelativeLayout
+        android:id="@+id/view_quiz"
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:visibility="invisible">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Level 2 complete"
+            android:textColor="#FFFFFF"
+            android:textSize="24dp" />
+
+
+        <ImageButton
+            android:id="@+id/strQuiz_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_marginTop="40dp"
+            android:background="#00FFFFFF"
+            app:srcCompat="@drawable/str_quiz_btn" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
